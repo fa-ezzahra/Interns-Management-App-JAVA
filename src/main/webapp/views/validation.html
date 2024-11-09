@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Success Inscription</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: orange;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .success-box {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      border: none;
+      background: none;
+      color: orange;
+      font-size: 24px;
+      padding: 0;
+    }
+
+    .close-btn:hover {
+      color: darkorange;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="success-box">
+      <button class="close-btn">&times;</button>
+      <h2>Inscription avec succès</h2>
+    </div>
+  </div>
+
+  <script>
+    document.querySelector('.close-btn').addEventListener('click', function() {
+      window.location.href = 'fenetre1.jsp'; // Change 'specific_page.html' to your desired page
+    });
+  </script>
+</body>
+</html>
